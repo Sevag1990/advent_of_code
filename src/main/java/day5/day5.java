@@ -17,7 +17,7 @@ public class day5 {
     final List<Deque<Character>> stacks = new ArrayList<>();
     StringBuilder result1 = new StringBuilder();
     List<String> input = getStringList();
-    int numberOfStacks = 9 ;
+    int numberOfStacks = 9;
 
     for (int i = 0; i < numberOfStacks; i++) {
       stacks.add(new ArrayDeque<>());
@@ -35,7 +35,11 @@ public class day5 {
     }
     for (final String line : input) {
       if (!line.contains("[") && line.startsWith("move")) {
-        List<String> t = Arrays.stream(line.trim().split("\\s+")).filter(s -> s.matches("(\\d+)")).toList();
+        List<String> t = Arrays.stream(line
+                .trim()
+                .split("\\s+"))
+            .filter(s -> s.matches("(\\d+)"))
+            .toList();
 
         int howMany = Integer.parseInt(t.get(0));
         int from = Integer.parseInt(t.get(1)) - 1;
@@ -46,10 +50,7 @@ public class day5 {
           for (int i = 0; i < howMany; i++) {
             createsMove.push(stacks.get(from).pop());
           }
-          createsMove.forEach(c -> System.out.println(c));
-
           createsMove.forEach(c -> stacks.get(to).push(c));
-
         } else {
           for (int i = 0; i < howMany; i++) {
             stacks.get(to).push(stacks.get(from).pop());

@@ -2,9 +2,15 @@ package day4;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.InputStream;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
+
+import org.w3c.dom.ranges.Range;
 
 public class day4 {
   public static void main(String[] args) {
@@ -12,7 +18,7 @@ public class day4 {
     int counter;
     int result1 = 0;
     int result2 = 0;
-
+    Instant start = Instant.now();
     try {
       BufferedReader br = new BufferedReader(new FileReader("inputs/day4.txt"));
       String line;
@@ -23,34 +29,16 @@ public class day4 {
           continue;
         }
 
-        List<String[]> outcome = Arrays.stream(line.split(","))
-            .map(s -> s.split("-"))
-            .toList();
+        String[] outcome = line.split(",");
 
-        extracted(pairs, counter, outcome);
-        List<Integer> g1 = pairs.get(0);
-        List<Integer> g2 = pairs.get(1);
+        String[] assign1 = outcome[0].split("-");
+        String[] assign2 = outcome[1].split("-");
+        IntStream intStream = IntStream.range(Integer.parseInt(assign1[0]), Integer.parseInt(assign1[1]));
+        intStream.forEach(System.out::println);
 
-        if (g1.size() > g2.size()) {
-          if (!g2.stream().filter(g1::contains).toList().isEmpty()) {
-            result2 += 1;
-          }
-          if (g2.stream().filter(s -> !g1.contains(s)).toList().isEmpty()) {
-            result1 += 1;
-          }
-        } else   {
-          if (!g1.stream().filter(g2::contains).toList().isEmpty()) {
-            result2 += 1;
-          }
-          if (g1.stream().filter(s -> !g2.contains(s)).toList().isEmpty()) {
-            result1 += 1;
-          }
-        }
+
+//
       }
-      System.out.println(result1);
-      System.out.println(result2);
-
-
     } catch (Exception e) {
       e.printStackTrace();
     }
