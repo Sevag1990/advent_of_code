@@ -16,7 +16,7 @@ public class day6 {
     StringBuilder builder = new StringBuilder();
     for (Character t : input.get(0).toCharArray()) {
       String stringRange = input.get(0).substring(counter, marker1++);
-      if (!isMarker(stringRange) ) {
+      if (isMarker(stringRange) ) {
         builder.append(stringRange);
         System.out.println("result1: " + builder.length());
         break;
@@ -28,7 +28,7 @@ public class day6 {
      counter = 0;
     for (Character t : input.get(0).toCharArray()) {
       String stringRange2 = input.get(0).substring(counter, marker2++);
-      if (!isMarker(stringRange2)) {
+      if (isMarker(stringRange2)) {
         builder.append(stringRange2);
         System.out.println("result2: " + builder.length());
         break;
@@ -42,11 +42,11 @@ public class day6 {
     for (int i = 0; i < marker.length(); i++) {
       for (int j = i + 1; j < marker.length(); j++) {
         if (marker.charAt(i) == marker.charAt(j)) {
-          return true;
+          return false;
         }
       }
     }
-    return false;
+    return true;
   }
 
   private static List<String> getStringList() {
