@@ -32,11 +32,11 @@ public class day8 {
         if (checkDown(currentPosition, i, j, positions) || checkUp(currentPosition, i, j, positions) || checkLeft(currentPosition, i, j,
             positions) || checkRight(currentPosition, i, j, positions)) {
           result1++;
-          scenicScore = checkDownscenic(currentPosition, i, j, positions) * checkUpscenic(currentPosition, i, j, positions) * checkLeftscenic(
-              currentPosition, i, j, positions) * checkRightscenic(currentPosition, i, j, positions);
-          if (scenicScore > result2) {
-            result2 = scenicScore;
-          }
+        }
+        scenicScore = checkDownscenic(currentPosition, i, j, positions) * checkUpscenic(currentPosition, i, j, positions) * checkLeftscenic(
+            currentPosition, i, j, positions) * checkRightscenic(currentPosition, i, j, positions);
+        if (scenicScore > result2) {
+          result2 = scenicScore;
         }
       }
     }
