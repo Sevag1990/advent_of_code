@@ -10,46 +10,40 @@ public class day8 {
   public static void main(String[] args) {
     int result1 = 0;
     int result2 = 0;
-    int scenicScore = 0;
+    int scenicScore;
 
     List<String> input = getStringList();
-    int[][] result = new int[input.size()][input.get(0).length()];
+    int[][] positions = new int[input.size()][input.get(0).length()];
     int x = 0;
     int y;
 
     for (String s : input) {
       y = 0;
       for (Character ch : s.toCharArray()) {
-        result[x][y] = Integer.parseInt(ch.toString());
+        positions[x][y] = Integer.parseInt(ch.toString());
         y++;
       }
       x++;
     }
 
-    for (int i = 1; i < result.length - 1; i++) {
-      for (int j = 1; j < result.length - 1; j++) {
-        int currentPosition = result[i][j];
-        if (checkDown(currentPosition, i, j, result) || checkUp(currentPosition, i, j, result) || checkLeft(currentPosition, i, j,
-            result) || checkRight(currentPosition, i, j, result)) {
+    for (int i = 1; i < positions.length - 1; i++) {
+      for (int j = 1; j < positions.length - 1; j++) {
+        int currentPosition = positions[i][j];
+        if (checkDown(currentPosition, i, j, positions) || checkUp(currentPosition, i, j, positions) || checkLeft(currentPosition, i, j,
+            positions) || checkRight(currentPosition, i, j, positions)) {
           result1++;
+          scenicScore = checkDownscenic(currentPosition, i, j, positions) * checkUpscenic(currentPosition, i, j, positions) * checkLeftscenic(
+              currentPosition, i, j, positions) * checkRightscenic(currentPosition, i, j, positions);
+          if (scenicScore > result2) {
+            result2 = scenicScore;
+          }
         }
       }
     }
-    for (int i = 1; i < result.length - 1; i++) {
-      for (int j = 1; j < result.length - 1; j++) {
-        int currentPosition = result[i][j];
-        scenicScore = checkDownscenic(currentPosition, i, j, result) * checkUpscenic(currentPosition, i, j, result) * checkLeftscenic(
-            currentPosition, i, j, result) * checkRightscenic(currentPosition, i, j, result);
-        if (scenicScore > result2) {
-          result2 = scenicScore;
-        }
 
-
-      }
-    }
     int edges = (input.size() * 2) + (input.get(0).length() * 2) - 4;
-    System.out.println(result2);
     System.out.println("result1: " + (result1 + edges));
+    System.out.println("result2: " + result2);
   }
 
   private static boolean checkUp(int currentPosition, int x, int y, int[][] result) {
