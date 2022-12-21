@@ -55,44 +55,30 @@ public class day11 {
         String[] worryLevels = m.getOperation().trim().replace("old", i.next().toString()).replace("\\s", "").split(
             "\\D+");
 
-
+        long worryLevel = 0;
         if (m.getOperation().contains("*")) {
-          long worryLevel = (Long.parseLong(worryLevels[0].trim()) * Long.parseLong(worryLevels[1].trim()));
-          worryLevel %= test;
-          if (worryLevel % m.getDivisible() == 0) {
-            monkeyList.get(Integer.parseInt(m.getIfTrue())).getStartingItems().add(worryLevel);
-
-          } else {
-            monkeyList.get(Integer.parseInt(m.getIfFalse())).getStartingItems().add(worryLevel);
-          }
+          //worryLevel = (Long.parseLong(worryLevels[0].trim()) * Long.parseLong(worryLevels[1].trim())) / 3;
+          worryLevel = (Long.parseLong(worryLevels[0].trim()) * Long.parseLong(worryLevels[1].trim()));
         }
         if (m.getOperation().contains("+")) {
-          long worryLevel = (Integer.parseInt(worryLevels[0].trim()) + Integer.parseInt(worryLevels[1].trim()));
-          worryLevel %= test;
-          if (worryLevel % m.getDivisible() == 0) {
-            monkeyList.get(Integer.parseInt(m.getIfTrue())).getStartingItems().add(worryLevel);
-          } else {
-            monkeyList.get(Integer.parseInt(m.getIfFalse())).getStartingItems().add(worryLevel);
-          }
-
+          // worryLevel = (Integer.parseInt(worryLevels[0].trim()) + Integer.parseInt(worryLevels[1].trim())) / 3;
+          worryLevel = (Integer.parseInt(worryLevels[0].trim()) + Integer.parseInt(worryLevels[1].trim()));
         }
         if (m.getOperation().contains("/")) {
-          long worryLevel = (Integer.parseInt(worryLevels[0].trim()) / Integer.parseInt(worryLevels[1].trim()));
-          worryLevel %= test;
-          if (worryLevel % m.getDivisible() == 0) {
-            monkeyList.get(Integer.parseInt(m.getIfTrue())).getStartingItems().add(worryLevel);
-          } else {
-            monkeyList.get(Integer.parseInt(m.getIfFalse())).getStartingItems().add(worryLevel);
-          }
+          // worryLevel = (Integer.parseInt(worryLevels[0].trim()) / Integer.parseInt(worryLevels[1].trim())) / 3;
+          worryLevel = (Integer.parseInt(worryLevels[0].trim()) / Integer.parseInt(worryLevels[1].trim()));
         }
         if (m.getOperation().contains("-")) {
-          long worryLevel = (Integer.parseInt(worryLevels[0].trim()) - Integer.parseInt(worryLevels[1].trim()));
-          worryLevel %= test;
-          if (worryLevel % m.getDivisible() == 0) {
-            monkeyList.get(Integer.parseInt(m.getIfTrue())).getStartingItems().add(worryLevel);
-          } else {
-            monkeyList.get(Integer.parseInt(m.getIfFalse())).getStartingItems().add(worryLevel);
-          }
+          // worryLevel = (Integer.parseInt(worryLevels[0].trim()) - Integer.parseInt(worryLevels[1].trim())) / 3;
+          worryLevel = (Integer.parseInt(worryLevels[0].trim()) - Integer.parseInt(worryLevels[1].trim()));
+        }
+
+        worryLevel %= test;
+        if (worryLevel % m.getDivisible() == 0) {
+          monkeyList.get(Integer.parseInt(m.getIfTrue())).getStartingItems().add(worryLevel);
+
+        } else {
+          monkeyList.get(Integer.parseInt(m.getIfFalse())).getStartingItems().add(worryLevel);
         }
         i.remove();
 
