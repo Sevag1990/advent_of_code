@@ -1,20 +1,21 @@
 package day11;
 
+import java.math.BigInteger;
 import java.util.List;
 
 public class Monkey {
-  private List<Integer> startingItems;
+  private List<Long> startingItems;
   private String operation;
   private int divisible;
   private String ifTrue;
   private String ifFalse;
-  private Integer inspectedItems;
+  private Long inspectedItems;
 
-  public List<Integer> getStartingItems() {
+  public List<Long> getStartingItems() {
     return startingItems;
   }
 
-  public void setStartingItems(List<Integer> startingItems) {
+  public void setStartingItems(List<Long> startingItems) {
     this.startingItems = startingItems;
   }
 
@@ -51,11 +52,11 @@ public class Monkey {
     this.ifFalse = ifFalse;
   }
 
-  public Integer getInspectedItems() {
+  public Long getInspectedItems() {
     return inspectedItems;
   }
 
-  public void setInspectedItems(Integer inspectedItems) {
+  public void setInspectedItems(Long inspectedItems) {
     this.inspectedItems = inspectedItems;
   }
 }
