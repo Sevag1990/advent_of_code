@@ -15,8 +15,8 @@ import java.util.stream.Stream;
 public class day11 {
 
   public static void main(String[] args) {
-    Pattern startingItemsPattern = Pattern.compile("[-]{0,1}[\\d]*[.]{0,1}[\\d]+");//. represents single character
-    Pattern operationPattern = Pattern.compile("(?<=:\\snew\\s=\\s).*");//. represents single character
+    Pattern startingItemsPattern = Pattern.compile("[-]{0,1}[\\d]*[.]{0,1}[\\d]+");
+    Pattern operationPattern = Pattern.compile("(?<=:\\snew\\s=\\s).*");
     int round = 0;
     var test = 9699690;
     List<String> inputs = getStringList();

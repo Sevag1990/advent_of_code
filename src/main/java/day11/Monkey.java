@@ -1,6 +1,5 @@
 package day11;
 
-import java.math.BigInteger;
 import java.util.List;
 
 public class Monkey {
