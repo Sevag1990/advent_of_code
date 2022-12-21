@@ -1,6 +1,7 @@
 package day11;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -19,8 +20,7 @@ public class day11 {
     Pattern startingItemsPattern = Pattern.compile("[-]{0,1}[\\d]*[.]{0,1}[\\d]+");//. represents single character
     Pattern operationPattern = Pattern.compile("(?<=:\\snew\\s=\\s).*");//. represents single character
     int round = 0;
-    int inspectsCounter = 0;
-
+    int inspectsCounter;
     List<String> inputs = getStringList();
     List<Monkey> monkeyList = new ArrayList<>();
     List<Integer> startingItems = new ArrayList<>();
@@ -28,7 +28,7 @@ public class day11 {
 
     parseInputToMonkey(startingItemsPattern, operationPattern, inputs, monkeyList, startingItems, monkey);
 
-    while (round < 20) {
+    while (round < 20 ) {
       for (Monkey m : monkeyList) {
         inspectsCounter = m.getInspectedItems() != null ? m.getInspectedItems() : 0;
         if (m.getStartingItems().isEmpty()) {
@@ -41,7 +41,7 @@ public class day11 {
               "\\D+");
 
           if (m.getOperation().contains("*")) {
-            int worryLevel = (Integer.parseInt(worryLevels[0].trim()) * Integer.parseInt(worryLevels[1].trim())) / 3;
+            int worryLevel = (Integer.parseInt(worryLevels[0].trim()) * Integer.parseInt(worryLevels[1].trim())) / 3 ;
             if (worryLevel % m.getDivisible() == 0) {
               monkeyList.get(Integer.parseInt(m.getIfTrue())).getStartingItems().add(worryLevel);
 
@@ -50,7 +50,7 @@ public class day11 {
             }
           }
           if (m.getOperation().contains("+")) {
-            int worryLevel = (Integer.parseInt(worryLevels[0].trim()) + Integer.parseInt(worryLevels[1].trim())) / 3;
+            int worryLevel = (Integer.parseInt(worryLevels[0].trim()) + Integer.parseInt(worryLevels[1].trim())) / 3 ;
             if (worryLevel % m.getDivisible() == 0) {
               monkeyList.get(Integer.parseInt(m.getIfTrue())).getStartingItems().add(worryLevel);
             } else {
@@ -80,16 +80,15 @@ public class day11 {
         m.setInspectedItems(inspectsCounter);
       }
       round++;
-
     }
     var result1 = monkeyList
         .stream()
         .map(Monkey::getInspectedItems)
-        .sorted(Comparator.reverseOrder()).limit(2)
-        .reduce(1,
-            Math::multiplyExact);
+        .sorted(Comparator.reverseOrder())
+        .map(BigDecimal::new)
+        .limit(2).toList();
 
-    System.out.println(result1);
+    System.out.println(result1.get(0).multiply(result1.get(1)));
   }
 
   private static void parseInputToMonkey(Pattern startingItemsPattern, Pattern operationPattern, List<String> inputs, List<Monkey> monkeyList, List<Integer> startingItems, Monkey monkey) {
