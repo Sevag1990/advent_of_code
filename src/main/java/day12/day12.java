@@ -72,8 +72,7 @@ public class day12 {
     }
 
     private static boolean check(Point currentPoint, Map<Point, Integer> heightmap, Point point) {
-        return heightmap.get(point) <= heightmap.get(currentPoint) ||
-                heightmap.get(point) == heightmap.get(currentPoint) + 1;
+        return heightmap.get(point) <= heightmap.get(currentPoint) + 1;
     }
 
     private static void parseInput(Point start, Point end, List<String> inputs, Map<Point, Integer> map, List<Point> startList, boolean part1) {
