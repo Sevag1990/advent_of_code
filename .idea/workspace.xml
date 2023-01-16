@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03a42c24-3275-4a09-8473-9e4f68ab74c5" name="Changes" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day11.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inputs/day9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day1/day1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day10/day10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day11/Monkey.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day11/day11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day12/day12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day2/Hand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day2/day2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day3/day3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day4/day4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day5/day5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day6/day6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day7/day7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day8/day8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day9/day9.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Iox0CsElpY5pUwmt3RYpcI4GLz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/hobby projects/advent_of_code/inputs&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hobby projects\advent_of_code\inputs" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\hobby projects\advent_of_code\inputs\2021" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="day25" />
+      <recent name="year2021.day1" />
+      <recent name="day13" />
+      <recent name="day12" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.day25">
+    <configuration name="day1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="year2021.day1.day1" />
+      <module name="adventofcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="year2021.day1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day10.day10" />
+      <module name="adventofcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day12.day12" />
+      <module name="adventofcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day12.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day13" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day13.day13" />
+      <module name="adventofcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="day25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day25.day25" />
+      <module name="adventofcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day25.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.day25" />
+        <item itemvalue="Application.day13" />
+        <item itemvalue="Application.day1" />
+        <item itemvalue="Application.day12" />
+        <item itemvalue="Application.day10" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03a42c24-3275-4a09-8473-9e4f68ab74c5" name="Changes" comment="" />
+      <created>1670861516856</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670861516856</updated>
+    </task>
+    <task id="LOCAL-00001" summary="day12 (not finished)">
+      <created>1671717498505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671717498505</updated>
+    </task>
+    <task id="LOCAL-00002" summary="day12">
+      <created>1672426734250</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672426734250</updated>
+    </task>
+    <task id="LOCAL-00003" summary="day12">
+      <created>1672433806005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672433806005</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit">
+      <created>1673898222203</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673898222203</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit">
+      <created>1673898339567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673898339567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="day12 (not finished)" />
+    <MESSAGE value="day12" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/year2021/day1/day1.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/year2021/day1/day1.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/day13/day13.java</url>
+          <line>38</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="shortestPath.getOrDefault(t.getKey(), Integer.MAX_VALUE)" />
+        <watch expression="heightmap.get(currentPoint)" />
+        <watch expression="heightmap.get(up)" />
+        <watch expression="heightmap.get(down)" />
+        <watch expression="inputs.get(i)" />
+        <watch expression="inputs.get(inputs.indexOf(i)).length()" />
+        <watch expression="inputs.get(inputs.indexOf(i)+2).length()" />
+        <watch expression="inputs.indexOf(i)" />
+        <watch expression="inputs.size() - inputs.indexOf(i)) " />
+        <watch expression="(inputs.size() - inputs.indexOf(i))" />
+        <watch expression="inputs.get(inputs.indexOf(i) + x" />
+        <watch expression="input.length()" />
+        <watch expression="toHex(String.valueOf(Integer.valueOf(snafu)" />
+      </configuration>
+      <inline-watch fileUrl="file://$PROJECT_DIR$/src/main/java/day12/day12.java" line="74">
+        <watch expression="heightmap.get(point)" />
+      </inline-watch>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/advent_of_code$day1.ic" NAME="day1 Coverage Results" MODIFIED="1672690321896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>year2021.day1.*</FILTER>
+    </SUITE>
+  </component>
+</project>
