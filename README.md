@@ -1,4 +1,4 @@
-# advent_of_code 2022
+# advent_of_code
 
 
                  * 
