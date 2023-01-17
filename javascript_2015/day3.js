@@ -12,6 +12,7 @@ function run() {
     let roboGrid = [0, 0];
     let visited = new Set();
     visited.add(`0x0`);
+    
     let visitedPart2 = new Set();
     visitedPart2.add(`0x0`);
 
