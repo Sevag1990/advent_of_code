@@ -24,7 +24,7 @@ def part_two(input_lines) -> int:
          box = boxes[hash(label)]
          if label in box:
             box.pop(label)
-      else:
+      if "=" in input:
          label, focal = input.split("=")
          box = boxes[hash(label)]
          box[label] = int(focal)
